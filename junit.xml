@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="37" failures="21" errors="0" time="0.498">
-  <testsuite name="tests/films.spec.js" errors="0" failures="21" skipped="0" timestamp="2025-09-08T13:29:16" time="0.453" tests="37">
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.002">
+<testsuites name="jest tests" tests="37" failures="19" errors="0" time="0.266">
+  <testsuite name="tests/films.spec.js" errors="0" failures="19" skipped="0" timestamp="2025-09-08T15:27:15" time="0.228" tests="37">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0.019">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0.018">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0.003">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0.002">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0.001">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: true
-Received: false
-    at Object.toBe (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:60:60)
-    at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:121:9)
-    at run (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0">
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array with the movies from director" time="0.001">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: [{&quot;director&quot;: &quot;Quentin Tarantino&quot;, &quot;duration&quot;: &quot;2h 45min&quot;, &quot;genre&quot;: [&quot;Drama&quot;, &quot;Western&quot;], &quot;score&quot;: 8.4, &quot;title&quot;: &quot;Django Unchained&quot;, &quot;year&quot;: 2012}]
-Received: undefined
-    at Object.toEqual (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:86:65)
-    at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:121:9)
-    at run (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0.002">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0.003">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: &quot;number&quot;
@@ -121,7 +85,7 @@ Received: &quot;undefined&quot;
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0.001">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
     at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:162:58)
     at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
@@ -138,7 +102,7 @@ Received: &quot;undefined&quot;
     at runTestInternal (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:367:16)
     at runTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return all of items when the array passed has fewer than 20 items" time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return all of items when the array passed has fewer than 20 items" time="0.001">
       <failure>Error: expect(received).toHaveLength(expected)
 
 Matcher error: received value must have a length property whose value must be a number
@@ -179,7 +143,7 @@ Received: undefined
     at runTestInternal (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:367:16)
     at runTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0.001">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: [&quot;aaa&quot;, &quot;aab&quot;, &quot;acb&quot;, &quot;acs&quot;, &quot;afb&quot;, &quot;agb&quot;, &quot;anc&quot;, &quot;apo&quot;, &quot;bab&quot;, &quot;bbb&quot;, …]
@@ -201,7 +165,7 @@ Received: undefined
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0.001">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: &quot;object&quot;
@@ -223,7 +187,7 @@ Received: &quot;undefined&quot;
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should return a new array" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return the element in a single element array" time="0">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return the element in a single element array" time="0.001">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: [{&quot;year&quot;: 1982}]
@@ -325,7 +289,7 @@ Received: false
     at runTestInternal (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:367:16)
     at runTest (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-runner/build/runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return a new array, not update the original one" time="0">
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return a new array, not update the original one" time="0.001">
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with duration as a number" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
@@ -419,7 +383,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return a new array, not update the original one" time="0">
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return the best film of a year, searching in an array" time="0">
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return the best film of a year, searching in an array" time="0.001">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: [{&quot;director&quot;: &quot;Stanley Kubrick&quot;, &quot;duration&quot;: &quot;1h 28min&quot;, &quot;genre&quot;: [&quot;Drama&quot;, &quot;War&quot;], &quot;score&quot;: 8.4, &quot;title&quot;: &quot;Film2&quot;, &quot;year&quot;: 1957}]
