@@ -31,7 +31,11 @@ function orderAlphabetically(movies) {
 
 // Exercise 5: Order by year, ascending
 function orderByYear(movies) {
-  
+  let sorted = [...movies].sort((a, b) => 
+    a.year - b.year || (a.title || '').localeCompare(b.title || '')
+  );
+  console.log("EXERCICE 5 ->", sorted);
+  return sorted;
 }
 
 // Exercise 6: Calculate the average of the movies in a category
