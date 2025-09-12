@@ -291,7 +291,6 @@ describe('Function "orderByYear"', () => {
 });
 
 // Exercise 6
-// YOUR CODE HERE. Test moviesAverageByCategory()
 describe('Function "moviesAverageByCategory"', () => {
   it('should be declared', () => {
     expect(typeof moviesAverageByCategory).toBe('function');
@@ -329,6 +328,21 @@ describe('Function "moviesAverageByCategory"', () => {
       { title: 'B', genre: ['Drama'] }
     ];
     expect(moviesAverageByCategory(testArr, 'Drama')).toBe(0);
+  });
+
+  it('should round to 2 decimals and return a number', () => {
+    const testArr = [
+      { title: 'A', genre: ['Drama'], score: 7.333 },
+      { title: 'B', genre: ['Drama'], score: 7.336 }
+    ];
+    const result = moviesAverageByCategory(testArr, 'Drama'); // (7.333+7.336)/2 = 7.3345 -> 7.33
+    expect(result).toBe(7.33);
+    expect(typeof result).toBe('number');
+  });
+
+  it('should return 0 for empty movies array or missing category', () => {
+    expect(moviesAverageByCategory([], 'Drama')).toBe(0);
+    expect(moviesAverageByCategory([{ title: 'A', genre: ['Drama'], score: 8 }])).toBe(0);
   });
 });
 

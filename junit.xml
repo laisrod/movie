@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="41" failures="7" errors="0" time="0.382">
-  <testsuite name="tests/films.spec.js" errors="0" failures="7" skipped="0" timestamp="2025-09-10T14:36:10" time="0.337" tests="41">
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.002">
+<testsuites name="jest tests" tests="43" failures="7" errors="0" time="0.987">
+  <testsuite name="tests/films.spec.js" errors="0" failures="7" skipped="0" timestamp="2025-09-12T10:43:35" time="0.877" tests="43">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.003">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0.001">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0.002">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0">
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0">
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array with the movies from director" time="0">
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array with the movies from director" time="0.001">
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0.001">
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be different from NaN" time="0.001">
     </testcase>
@@ -27,9 +27,9 @@
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.009">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.015">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0">
     </testcase>
@@ -37,29 +37,33 @@
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should order them alphabetically." time="0.001">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0.001">
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0.018">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0.05">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return a new array" time="0.001">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return a new array" time="0.008">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return the element in a single element array" time="0.001">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return the element in a single element array" time="0.004">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return the new array in ascending order" time="0.002">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return the new array in ascending order" time="0.004">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0.001">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0.003">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be declared" time="0">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be declared" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0.001">
     </testcase>
     <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should calculate the average score for the given category with 2 decimals" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should ignore movies in the category that do not have a score" time="0">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should ignore movies in the category that do not have a score" time="0.001">
     </testcase>
     <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return 0 when there are no movies with score in the given category" time="0">
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should round to 2 decimals and return a number" time="0">
+    </testcase>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return 0 for empty movies array or missing category" time="0.001">
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should be declared" time="0">
     </testcase>
@@ -68,7 +72,7 @@
 
 Expected: true
 Received: false
-    at Object.toBe (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:342:53)
+    at Object.toBe (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:356:53)
     at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)
@@ -87,7 +91,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with duration as a number" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:350:41)
+    at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:364:41)
     at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)
@@ -104,7 +108,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 31 minute movie" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:355:36)
+    at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:369:36)
     at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)
@@ -121,7 +125,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 341 minute movie" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:360:36)
+    at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:374:36)
     at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)
@@ -138,7 +142,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 2 hour movie" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:365:36)
+    at Object.&lt;anonymous&gt; (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:379:36)
     at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)
@@ -155,12 +159,12 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should be declared" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0.001">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: true
 Received: false
-    at Object.toBe (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:376:59)
+    at Object.toBe (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:390:59)
     at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)
@@ -177,12 +181,12 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return a new array, not update the original one" time="0">
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return the best film of a year, searching in an array" time="0.001">
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return the best film of a year, searching in an array" time="0.002">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: [{&quot;director&quot;: &quot;Stanley Kubrick&quot;, &quot;duration&quot;: &quot;1h 28min&quot;, &quot;genre&quot;: [&quot;Drama&quot;, &quot;War&quot;], &quot;score&quot;: 8.4, &quot;title&quot;: &quot;Film2&quot;, &quot;year&quot;: 1957}]
 Received: undefined
-    at Object.toEqual (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:410:43)
+    at Object.toEqual (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/tests/films.spec.js:424:43)
     at Promise.then.completed (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/lais/Projetos/itacademy/SPRINT3/starter-code-frontend-sprint-3-movies/node_modules/jest-circus/build/utils.js:231:10)

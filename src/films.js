@@ -3,13 +3,6 @@ function getAllDirectors(array) {
   const directors = (array || [])
     .map(movie => movie && movie.director)
     .filter(Boolean);
-  return directors;
-}
-
-function getAllDirectorsUnique(array) {
-  const directors = (array || [])
-    .map(movie => movie && movie.director)
-    .filter(Boolean);
 
   return Array.from(new Set(directors));
 }
