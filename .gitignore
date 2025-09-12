@@ -7,3 +7,4 @@ yarn.lock
 test-results.html
 bundle.js
 pnpm-lock.yaml
+echo "junit.xml" >> .gitignore
