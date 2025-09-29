@@ -15,11 +15,14 @@ function hasCategory(movie, category) {
 }
 
 function calculateAverage(items, scoreExtractor) {
-  const validItems = items.filter(item => hasValidScore(item));
-  if (validItems.length === 0) return 0;
+  const validScores = items
+    .map(scoreExtractor)
+    .filter(score => typeof score === 'number' && !isNaN(score));
   
-  const sum = validItems.reduce((acc, item) => acc + scoreExtractor(item), 0);
-  return Number((sum / validItems.length).toFixed(2));
+  if (validScores.length === 0) return 0;
+  
+  const sum = validScores.reduce((acc, score) => acc + score, 0);
+  return Number((sum / validScores.length).toFixed(2));
 }
 
 function extractProperty(movies, property, fallback = '') {
@@ -28,18 +31,18 @@ function extractProperty(movies, property, fallback = '') {
     .filter(Boolean);
 }
 
-// Exercise 1: Get the array of all directors.
+// Exercise 1 
 function getAllDirectors(array) {
   const directors = extractProperty(array, 'director');
   return Array.from(new Set(directors));
 }
 
-// Exercise 2: Get the films of a certain director
+// Exercise 2
 function getMoviesFromDirector(array, director) {
   return ensureArray(array).filter(movie => hasDirector(movie, director));
 }
 
-// Exercise 3: Calculate the average of the films of a given director.
+// Exercise 3
 function moviesAverageOfDirector(array, director) {
   const movies = ensureArray(array);
   const moviesByDirector = movies
@@ -49,7 +52,7 @@ function moviesAverageOfDirector(array, director) {
   return calculateAverage(moviesByDirector, movie => movie.score);
 }
 
-// Exercise 4:  Alphabetic order by title 
+// Exercise 4
 function orderAlphabetically(movies) {
   const titles = extractProperty(movies, 'title');
   return titles
@@ -57,7 +60,7 @@ function orderAlphabetically(movies) {
     .slice(0, 20);
 }
 
-// Exercise 5: Order by year, ascending
+// Exercise 5
 function orderByYear(movies) {
   let sorted = [...movies].sort((a, b) => 
     a.year - b.year || (a.title || '').localeCompare(b.title || '')
@@ -66,7 +69,7 @@ function orderByYear(movies) {
   return sorted;
 }
 
-// Exercise 6: Calculate the average of the movies in a category
+// Exercise 6
 function moviesAverageByCategory(movies, category) {
   const movieList = ensureArray(movies);
   const moviesInCategory = movieList
@@ -76,15 +79,7 @@ function moviesAverageByCategory(movies, category) {
   return calculateAverage(moviesInCategory, movie => movie.score);
 }
 
-// Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
 
-}
-
-// Exercise 8: Get the best film of a year
-function bestFilmOfYear() {
-  
-}
 
 
 
